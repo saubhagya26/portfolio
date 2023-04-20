@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 import { styles } from '../styles';
 import { navLinks } from '../constants';
-import { logo, menu, close, logo1, logo2 } from '../assets'
+import {  menu, close, logo2 } from '../assets'
 
 const Navbar = () => {
 
@@ -28,17 +28,33 @@ const Navbar = () => {
         </Link>
         <ul className='list-none hidden sm:flex flex-row gap-10'>
           {navLinks.map((link) => {
-            return (
-            <li
-              key={link.id}
-              className={`${
-                active === link.title ? "text-white" : "text-secondary"
-              } hover:text-white text-[18px] font-medium cursor-pointer`}
-              onClick={() => setActive(link.title)}
-            >
-              <a href={`#${link.id}`}>{link.title}</a>
-            </li>
-          )})}
+            if (link.title === 'Blog') {
+              return (
+                <li
+                  key={link.id}
+                  className={`${
+                    active === link.title ? "text-white" : "text-secondary"
+                  } hover:text-white text-[18px] font-medium cursor-pointer`}
+                >
+                  <Link to='/blogs' onClick={() => setActive(link.title)}>
+                    {link.title}
+                  </Link>
+                </li>
+              )
+            } else {
+              return (
+                <li
+                  key={link.id}
+                  className={`${
+                    active === link.title ? "text-white" : "text-secondary"
+                  } hover:text-white text-[18px] font-medium cursor-pointer`}
+                  onClick={() => setActive(link.title)}
+                >
+                  <a href={`/#${link.id}`}>{link.title}</a>
+                </li>
+              )
+            }
+          })}
         </ul>
 
         <div className='sm:hidden flex flex-1 justify-end items-center'>
@@ -51,20 +67,40 @@ const Navbar = () => {
           <div className={`${!toggle ? 'hidden' : 'flex'}  p-6 black-gradient absolute top-20 right-0 mx-4 my-2 min-w[140px] z-10 rounded-xl`}>
             <ul className='list-none flex justify-end flex-col items-start gap-4'>
               {navLinks.map((link) => {
-                return (
-                <li
-                  key={link.id}
-                  className={`${
-                    active === link.title ? "text-white" : "text-secondary"
-                  } font-poppins font-medium cursor-pointer text-[16px]`}
-                  onClick={() => {
-                    setToggle(!toggle);
-                    setActive(link.title);
-                  }}
-                >
-                  <a href={`#${link.id}`}>{link.title}</a>
-                </li>
-              )})}
+                if (link.title === 'Blog') {
+                  return (
+                    <li
+                      key={link.id}
+                      className={`${
+                        active === link.title ? "text-white" : "text-secondary"
+                      } font-poppins font-medium cursor-pointer text-[16px]`}
+                      onClick={() => {
+                        setToggle(!toggle);
+                        setActive(link.title);
+                      }}
+                    >
+                      <Link to='/blogs' onClick={() => setActive(link.title)}>
+                        {link.title}
+                      </Link>
+                    </li>
+                  )
+                } else {
+                  return (
+                    <li
+                      key={link.id}
+                      className={`${
+                        active === link.title ? "text-white" : "text-secondary"
+                      } font-poppins font-medium cursor-pointer text-[16px]`}
+                      onClick={() => {
+                        setToggle(!toggle);
+                        setActive(link.title);
+                      }}
+                    >
+                      <a href={`#${link.id}`}>{link.title}</a>
+                    </li>
+                  )
+                }
+                })}
             </ul>
           </div>
         </div>

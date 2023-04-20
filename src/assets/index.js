@@ -37,6 +37,7 @@ import codegpt from "./codegpt.png"
 import cryptoverse from "./cryptoverse.png"
 import mjhata from "./mjhata.png"
 import fashionation from "./fashionation.png"
+import computer from "./computer.png"
 
 export {
   logo2,
@@ -75,4 +76,5 @@ export {
   cryptoverse,
   mjhata,
   fashionation,
+  computer,
 };

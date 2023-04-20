@@ -159,7 +159,7 @@ import {
       points: [
         "Designed the structure and web pages layout as per the user requirements with 100% client satisfaction.",
         "Responsible for making responsive pages by implementing mobile-first approach on pre-existing desktop versions.",
-        "roactively sought out opportunities to learn new technologies and techniques, attending workshops and training sessions to expand my knowledge and skillset.",
+        "Proactively sought out opportunities to learn new technologies and techniques, attending workshops and training sessions to expand my knowledge and skillset.",
         "Collaborated with senior developers on multiple projects, contributing to the development of new features and functionality.",
       ],
     },
@@ -194,7 +194,7 @@ import {
   
   const projects = [
     {
-      name: "CrytowdFunding",
+      name: "CryptowdFunding",
       description:
         "Revolutionize crowdfunding with my Ethereum-based Web3.0 platform, enabling secure and transparent funding for projects worldwide.",
       tags: [
@@ -326,5 +326,31 @@ import {
       project_link: "https://mjhata.netlify.app",
     },
   ];
+
+  const blogs = [
+    {
+      title: "CryptowdFunding",
+      description:
+        "Revolutionize crowdfunding with my Ethereum-based Web3.0 platform, enabling secure and transparent funding for projects worldwide.",
+      tags: [
+        {
+          name: "react",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "thirdweb",
+          color: "green-text-gradient",
+        },
+        {
+          name: "tailwind",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: cryptowdfunding,
+      author: "Saubhagya Srivastava",
+      date: "26 Dec, 2022",
+    },
+
+  ];
   
-  export { services, technologies, experiences, testimonials, projects };
+  export { services, technologies, experiences, testimonials, projects, blogs };

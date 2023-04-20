@@ -7,6 +7,12 @@ import Experience from './Experience';
 import Works from './Works';
 import Feedbacks from './Feedbacks';
 import Contact from './Contact';
+import Blog from './Blog';
+import Categories from './Categories';
+import PostWidget from './PostWidget';
+import Author from './Author';
+import Comments from './Comments';
+import CommentsForm from './CommentsForm';
 
 export {
   Hero,
@@ -17,8 +23,14 @@ export {
   Works,
   Feedbacks,
   Contact,
+  Blog,
+  Categories,
+  PostWidget,
   EarthCanvas, 
   BallCanvas, 
   ComputersCanvas, 
-  StarsCanvas
+  StarsCanvas,
+  Author,
+  Comments,
+  CommentsForm,
 }

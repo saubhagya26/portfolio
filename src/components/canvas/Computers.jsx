@@ -61,6 +61,7 @@ const ComputersCanvas = () => {
       shadows
       camera={{ position: [20 ,3 ,5], fov: 25 }}
       gl={{ preserveDrawingBuffer: true }}
+      className='hidden lg:block'
     >
       <Suspense fallback={<CanvasLoader />}>
         <OrbitControls 
