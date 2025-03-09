@@ -15,19 +15,17 @@ import {
     git,
     figma,
     docker,
+    cts,
     tcs,
     infosys,
     clecotech,
-    carrent,
-    jobit,
-    tripguide,
     cryptowdfunding,
     shoppy,
     codegpt,
     cryptoverse,
     fashionation,
-    mjhata,
     threejs,
+    fienhance,
   } from "../assets";
   
   export const navLinks = [
@@ -125,16 +123,29 @@ import {
   
   const experiences = [
     {
+      title: "MERN Stack Developer",
+      company_name: "Cognizant Technology Services",
+      icon: cts,
+      iconBg: "#D4E6fC",
+      date: "Aug 2023 - Present",
+      points: [
+        "Led architectural decisions with the client, ensuring alignment with business goals and a scalable application foundation.",
+        "Implemented microservices to enhance modularity, reducing deployment time and improving scalability.",
+        "Managed complex forms and state using React Query & React Hook Forms, optimizing user workflows.",
+        "Optimized architecture and build with Webpack & custom plugins, reducing bundle size and load time.",
+      ]
+    },
+    {
       title: "React.js Developer",
       company_name: "Tata Consultancy Services",
       icon: tcs,
       iconBg: "#E6DEDD",
-      date: "Nov 2020 - Present",
+      date: "Nov 2020 - Aug 2023",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Performed testing and optimization on 30+ React components for better feasibility across the devices.",
+        "Developed responsive UI components using a mobile-first approach, enhancing user experience across various devices.",
+        "Formulated comprehensive Jest test cases to ensure code reliability and maintainability, achieving 90% test coverage.",
+        "Built and integrated RESTful APIs using Node.js, seamlessly linking frontend and backend systems.",
+        "Implemented web accessibility standards, expanding the application’s usability to support users with disabilities and improving compliance.",
       ],
     },
     {
@@ -144,10 +155,10 @@ import {
       iconBg: "#1791FF",
       date: "Feb 2020 - Nov 2020",
       points: [
-        "Migrated a Wordpress based website to a Component-based React web application.",
-        "Collaborated with the team of 15+ members in updating and enhancing the performance and load time of web application.",
-        "Contributed in integrating database with backend application using mongoose and express.js.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        "Gained hands-on experience in AWS deployment, applying best practices for secure and scalable cloud solutions.",
+        "Collaborated with a team of 8+ members, enhancing project quality through coordinated efforts and shared insights.",
+        "Learned to design MongoDB schemas with Mongoose, optimizing data management and backend integration with Node.js.",
+        "Developed 5+ web applications, strengthening expertise in JavaScript, React, and modern web practices."
       ],
     },
     {
@@ -159,7 +170,7 @@ import {
       points: [
         "Designed the structure and web pages layout as per the user requirements with 100% client satisfaction.",
         "Responsible for making responsive pages by implementing mobile-first approach on pre-existing desktop versions.",
-        "Proactively sought out opportunities to learn new technologies and techniques, attending workshops and training sessions to expand my knowledge and skillset.",
+        "Proactively sought out opportunities to learn new technologies and techniques, attended workshops and training sessions.",
         "Collaborated with senior developers on multiple projects, contributing to the development of new features and functionality.",
       ],
     },
@@ -304,53 +315,27 @@ import {
       project_link: "",
     },
     {
-      name: "MJH Ata",
+      name: "Fi-Enhance",
       description:
-        "Discover this modern and comprehensive school website, providing easy access to information, galleries, and seamless communication through contact form.",
-      tags: [
-        {
-          name: "javascriptES6",
-          color: "blue-text-gradient",
-        },
-        {
-          name: "node.js",
-          color: "green-text-gradient",
-        },
-        {
-          name: "css",
-          color: "pink-text-gradient",
-        },
-      ],
-      image: mjhata,
-      source_code_link: "https://github.com/saubhagya26/mjh-ata",
-      project_link: "https://mjhata.netlify.app",
-    },
-  ];
-
-  const blogs = [
-    {
-      title: "CryptowdFunding",
-      description:
-        "Revolutionize crowdfunding with my Ethereum-based Web3.0 platform, enabling secure and transparent funding for projects worldwide.",
+        "A web application that simplifies your financial planning and helps you make informed decisions about your investments by providing a range of financial calculators.",
       tags: [
         {
           name: "react",
           color: "blue-text-gradient",
         },
         {
-          name: "thirdweb",
+          name: "reactNative",
           color: "green-text-gradient",
         },
         {
-          name: "tailwind",
+          name: "mui",
           color: "pink-text-gradient",
         },
       ],
-      image: cryptowdfunding,
-      author: "Saubhagya Srivastava",
-      date: "26 Dec, 2022",
+      image: fienhance,
+      source_code_link: "https://github.com/DevsVilla/fienhance",
+      project_link: "https://www.fienhance.com",
     },
-
   ];
   
-  export { services, technologies, experiences, testimonials, projects, blogs };
+  export { services, technologies, experiences, testimonials, projects };

@@ -1,4 +1,3 @@
-import logo from "./logo.svg";
 import backend from "./backend.png";
 import creator from "./creator.png";
 import mobile from "./mobile.png";
@@ -6,7 +5,6 @@ import web from "./web.png";
 import github from "./github.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
-import logo1 from "./logo1.svg";
 import logo2 from "./logo2.png";
 import link from "./link.png";
 
@@ -24,25 +22,21 @@ import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
 
+import cts from "./company/cts.png"
 import tcs from "./company/tcs.png";
 import infosys from "./company/infosys.png"
 import clecotech from "./company/clecotech.png"
 
-import carrent from "./carrent.png";
-import jobit from "./jobit.png";
-import tripguide from "./tripguide.png";
 import cryptowdfunding from "./cryptowdfunding.png";
 import shoppy from "./shoppy.png"
 import codegpt from "./codegpt.png"
 import cryptoverse from "./cryptoverse.png"
-import mjhata from "./mjhata.png"
+import fienhance from "./fiEnhance.png"
 import fashionation from "./fashionation.png"
 import computer from "./computer.png"
 
 export {
   logo2,
-  logo1,
-  logo,
   backend,
   creator,
   mobile,
@@ -64,17 +58,15 @@ export {
   tailwind,
   typescript,
   threejs,
+  cts,
   tcs,
   infosys,
   clecotech,
-  carrent,
-  jobit,
-  tripguide,
   cryptowdfunding,
   shoppy,
   codegpt,
   cryptoverse,
-  mjhata,
+  fienhance,
   fashionation,
   computer,
 };
